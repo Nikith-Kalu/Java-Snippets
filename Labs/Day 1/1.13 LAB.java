@@ -1,6 +1,13 @@
-public class LabProgram {
+import java.util.Scanner;
+
+public class DoubleNum {
    public static void main(String[] args) {
-      System.out.println("  NO PARKING");
-      System.out.println("2:00 - 6:00 a.m.");
+      Scanner scnr = new Scanner(System.in);
+      int x;
+      
+      System.out.println("Enter x: ");
+      x = scnr.nextInt();
+      
+      System.out.println("x doubled is: " + (2 * x));
    }
 }

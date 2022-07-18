@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
-public class DoubleNum {
+public class NumSquared {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
-      int x;
+      int userNum;
+      int userNumSquared;
       
-      System.out.println("Enter x: ");
-      x = scnr.nextInt();
+      userNum = scnr.nextInt();
       
-      System.out.println("x doubled is: " + (2 * x));
+      userNumSquared = userNum * userNum;   // Bug here; fix it when instructed
+      
+      System.out.println(userNumSquared);   // Output formatting issue here; fix it when instructed
    }
 }
