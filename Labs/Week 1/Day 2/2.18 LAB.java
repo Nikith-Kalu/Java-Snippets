@@ -18,7 +18,7 @@ public class LabProgram {
       userNum2  = (userNum1 / divNum);
       userNum3 = (userNum2 / divNum);
       
-      System.out.print(userNum1 + " " + userNum2 + " " + userNum3);
+      System.out.println(userNum1 + " " + userNum2 + " " + userNum3);
       
    }
 }
