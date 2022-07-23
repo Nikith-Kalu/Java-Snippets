@@ -2,30 +2,23 @@ import java.util.Scanner;
 
 public class LabProgram {
    public static void main(String[] args) {
+      
       Scanner scnr = new Scanner(System.in);
       
-      int quarters;
-      int dimes; 
-      int nickels; 
-      int pennies; 
-      double convQuarters;
-      double convDimes;
-      double convNickels;
-      double convPennies;
-      double finalAmount;
+      int userNum;
+      int divNum;
+      int userNum1;
+      int userNum2;
+      int userNum3;
       
-      quarters = scnr.nextInt();
-      dimes = scnr.nextInt();
-      nickels = scnr.nextInt();
-      pennies = scnr.nextInt(); 
+      userNum = scnr.nextInt();
+      divNum = scnr.nextInt();
       
-      convQuarters = (quarters * 0.25);
-      convDimes = (dimes * 0.1);
-      convNickels = (nickels * 0.05);
-      convPennies = (pennies * 0.01);
-      finalAmount = (convQuarters + convDimes + convNickels + convPennies);
+      userNum1 = (userNum / divNum);
+      userNum2  = (userNum1 / divNum);
+      userNum3 = (userNum2 / divNum);
       
-      System.out.printf("Amount: $%.2f\n", finalAmount);
-      
+      System.out.println(userNum1 + " " + userNum2 + " " + userNum3);
       
    }
+}
