@@ -21,7 +21,7 @@ public class LabProgram {
       
       convQuarters = (quarters * 0.25);
       convDimes = (dimes * 0.1);
-      convNickels = (nickels * 0.5);
+      convNickels = (nickels * 0.05);
       convPennies = (pennies * 0.01);
       finalAmount = (convQuarters + convDimes + convNickels + convPennies);
       
