@@ -18,5 +18,4 @@ public class ProgramSummary{
          name3 = s.nextLine();
          
          System.out.println(name1 + ", " + name2 + ", " + name3);
-    }
-}
+    } 
