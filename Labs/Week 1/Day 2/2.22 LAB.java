@@ -12,7 +12,7 @@ public class RecipeConversion{
        ingr = scnr.nextLine();
        grams = scnr.nextInt();
        sclFctr =  scnr.nextDouble();
-       cups = (double)(grams / 250) * sclFctr;
+       cups = ((double)grams / 250) * sclFctr;
        
        System.out.println("Please input the name of your ingredient:");
        System.out.println("Please input the measurement in grams:");
@@ -20,13 +20,13 @@ public class RecipeConversion{
        System.out.println();
        
        System.out.printf("%-20s", "Ingredient");
-       System.out.println("%-20s", "Grams");
-       System.out.println("%-20s", "Scale Factor");
-       System.out.println("%-20s\n", "Cups");
+       System.out.printf("%-20s", "Grams");
+       System.out.printf("%-20s", "Scale Factor");
+       System.out.printf("%-20s\n", "Cups");
        
-       System.out.println("%-20s", ingr);
-       System.out.println("%-20d", grams);
-       System.out.println("%-20.1f", sclFactor);
-       System.out.println("%-1.2f\n", cups);
-   
+       System.out.printf("%-20s", ingr);
+       System.out.printf("%-20d", grams);
+       System.out.printf("%-20.1f", sclFctr);
+       System.out.printf("%-1.2f\n", cups);
+    }
 }
