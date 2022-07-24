@@ -15,6 +15,7 @@ public class LabProgram {
       
       System.out.printf("After 6 hours: %.2f mg\n", caf1);
       System.out.printf("After 12 hours: %.2f mg\n", caf2);
-      System.out.printf("After 6 hours: %.2f mg\n", caf3);
+      System.out.printf("After 24 hours: %.2f mg\n", caf3);
    }
 }
+
