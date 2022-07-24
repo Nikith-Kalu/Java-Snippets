@@ -18,4 +18,7 @@ public class LabProgram {
       f3 = f0 * Math.pow(r, 3);
       f4 = f0 * Math.pow(r, 4);
       
-      System.out.println(f0 + " " + f1 + " " + f2 + " " + f3 + " " + f4);
+      System.out.printf("%.2f %.2f %.2f %.2f %.2f\n", f0, f1, f2, f3, f4);
+
+   }
+}
