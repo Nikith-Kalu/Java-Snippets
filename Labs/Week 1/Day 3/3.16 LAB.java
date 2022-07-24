@@ -16,6 +16,6 @@ public class LabProgram {
       gasCost75 = (dollarGallon / mileGallon) * 75;
       gasCost500 = (dollarGallon / mileGallon) * 500;
       
-      System.out.printf("%.2f %.2f %.2f", gasCost20, gasCost75, gasCost500);
+      System.out.printf("%.2f %.2f %.2f\n", gasCost20, gasCost75, gasCost500);
    }
 }
