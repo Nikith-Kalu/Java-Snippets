@@ -8,16 +8,20 @@ public class LabProgram {
 
       highwayNumber = scnr.nextInt();
       primaryNumber =  highwayNumber; 
+      
      
      //primaryNumber 
-     if((highwayNumber >= 100)&&(highwayNumber<1000)) {
-        while (primaryNumber>100) {
+     if ((highwayNumber >= 100) && (highwayNumber < 1000)) {
+        while (primaryNumber > 100) {
            primaryNumber = primaryNumber - 100;
         }
      }
-      
+      //200 exception
+     if ((highwayNumber == 200)) {
+        System.out.println(highwayNumber + " is not a valid interstate highway number.");
+        }
       //main highway
-     if ((highwayNumber < 100)&&(highwayNumber>0)) {
+     else if ((highwayNumber < 100) && (highwayNumber>0)) {
         //Even Highway
         if (highwayNumber % 2 == 0){ 
            System.out.println("I-" + highwayNumber + " is primary, going east/west.");
@@ -27,6 +31,7 @@ public class LabProgram {
            System.out.println("I-" + highwayNumber + " is primary, going north/south.");
            }
         }
+        
         //aux highways
       else if ((highwayNumber >= 100) && (highwayNumber<1000)) {
            //Even Aux Highway
@@ -42,8 +47,6 @@ public class LabProgram {
       else {
          System.out.println(highwayNumber + " is not a valid interstate highway number.");
          }
-        
-        
-     
+       
    }
 }
