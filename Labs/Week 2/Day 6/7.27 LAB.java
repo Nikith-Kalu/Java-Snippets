@@ -1,37 +1,31 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class LabProgram {
-
-   public static int getWordFrequency(String[] wordsList, int listSize, String currWord){
-      int i;
-      int frequency = 0;
+   
+   public static String coinFlip(Random rand) {
+      String coinFlipReturn = "";
+      int randVal;
       
-      for (i = 0; i < listSize; ++i){
-         if (currWord.equalsIgnoreCase(wordsList[i])){
-         ++frequency;
+      randVal = rand.nextInt(2);
+      
+      if (randVal == 0){
+         coinFlipReturn = "Tails";
       }
+      else {
+         coinFlipReturn = "Heads";
+      }
+      return coinFlipReturn;
    }
-   return frequency;
-}
+   
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
-      int i;
-      int arraySizeInput = scnr.nextInt();
+      Random rand = new Random(2); // Seed used in develop mode
       
-      String[] inputStringArray = new String[arraySizeInput];
+      int input = scnr.nextInt();
       
-      for (i = 0; i < arraySizeInput; ++i){
-         inputStringArray[i] = scnr.next();
+      for (int i = 0; i < input; ++i){
+         System.out.println(coinFlip(rand));
       }
-      
-      int[] arrayFreq = new int[arraySizeInput];
-      
-      for (i = 0; i < arraySizeInput; ++i){
-         arrayFreq[i] = getWordFrequency(inputStringArray, arraySizeInput, inputStringArray[i]);
-      }
-      
-      for (i = 0; i < arraySizeInput; ++i){
-         System.out.println(inputStringArray[i] + " " + arrayFreq[i]);
    }
-}
 }
