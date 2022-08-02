@@ -1,5 +1,8 @@
-package Labs.Snippets.Algorithms.ONotation;
-
-public class O(1)Constant {
-    
-}
+FindMin(x, y) {
+    if (x < y) {
+       return x
+    }
+    else {
+       return y
+    }
+ }
