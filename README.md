@@ -1,2 +1,2 @@
 # bootcamp-1
-A repo dedicated to housing all my work through the duration of programming bootcamp 1
+A repo dedicated to housing all the useful snippets collected throughout the duration of the programming bootcamp 1 course.
