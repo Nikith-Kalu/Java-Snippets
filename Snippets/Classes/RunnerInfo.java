@@ -1,8 +1,8 @@
 class RunnerInfo {
-    __(A)__ int timeRun;
+    private int timeRun;
     private double distRun;
  
-    __(B)__ void setTime(int timeRunSecs) {     // Time run in seconds
+    private void setTime(int timeRunSecs) {     // Time run in seconds
        timeRun = timeRunSecs;                   // timeRun refers to the field
     }
  
@@ -16,7 +16,7 @@ class RunnerInfo {
  }
  public class RaceResults {
     public static void main(String[] args) {
-       RunnerInfo runner1 = __(C)__;          // User-created object of class type RunnerInfo
+       RunnerInfo runner1 = new RunnerInfo();          // User-created object of class type RunnerInfo
        RunnerInfo runner2 = new RunnerInfo(); // A second object
  
        runner1.setTime(360);
@@ -24,7 +24,7 @@ class RunnerInfo {
        runner2.setTime(200);
        runner2.setDist(0.5);
  
-       System.out.println("Runner1's speed in MPH: " + runner1.__(D)__);
-       System.out.println("Runner2's speed in MPH: " + __(E)__);
+       System.out.println("Runner1's speed in MPH: " + runner1.getSpeedMph();
+       System.out.println("Runner2's speed in MPH: " + runner2.getSpeedMph();
     }
  }
