@@ -1,6 +1,6 @@
 public class RaceResults {
     public static void main(String[] args) {
-       RunnerInfo runner1 = __(C)__;          // User-created object of class type RunnerInfo
+       RunnerInfo runner1 = new RunnerInfo();          // User-created object of class type RunnerInfo
        RunnerInfo runner2 = new RunnerInfo(); // A second object
  
        runner1.setTime(360);
