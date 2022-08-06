@@ -1,16 +1,24 @@
-public class Restaurant {                          // Info about a restaurant
+public class Restaurant {                          
     private String name;
     private int rating;
  
-    public void setName(String restaurantName) {    // Sets the restaurant's name
+    public void setName(String restaurantName) {  // Mutator
        name = restaurantName;
     }
  
-    public void setRating(int userRating) {         // Sets the rating (1-5, with 5 best)
+    public void setRating(int userRating) {       // Mutator
        rating = userRating;
     }
  
-    public void print() {                           // Prints name and rating on one line
+    public String getName() {  // Accessor
+       return name;
+    }
+ 
+    public int getRating() {  // Accessor
+       return rating;
+    }
+ 
+    public void print() {      // Accessor
        System.out.println(name + " -- " + rating);
     }
  }
