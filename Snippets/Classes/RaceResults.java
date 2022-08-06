@@ -8,7 +8,7 @@ public class RaceResults {
        runner2.setTime(200);
        runner2.setDist(0.5);
  
-       System.out.println("Runner1's speed in MPH: " + runner1.__(D)__);
-       System.out.println("Runner2's speed in MPH: " + __(E)__);
+       System.out.println("Runner1's speed in MPH: " + getSpeedMph());
+       System.out.println("Runner2's speed in MPH: " + runner2.getSpeedMph());
     }
  }
