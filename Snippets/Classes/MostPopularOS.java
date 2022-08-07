@@ -11,7 +11,7 @@ public class MostPopularOS {
       operatingSystems.add("Windows 10");
       operatingSystems.add("Windows 7");
       operatingSystems.add("Mac OS X");
-      operatingSystems.add("Windows 7");
+      operatingSystems.add("Windows 8");
       operatingSystems.add("Windows XP");
       operatingSystems.add("Linux");
       operatingSystems.add("Chrome OS");
