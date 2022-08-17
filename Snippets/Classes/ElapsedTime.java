@@ -5,7 +5,7 @@
  * @version 1.0
  */
 public class ElapsedTime {
-    /**
+    /*
      * The hours portion of the time
      */
     private int hours;
